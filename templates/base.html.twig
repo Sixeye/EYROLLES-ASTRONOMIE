@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}LIBRAIRIE EYROLLES{% endblock %}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style/app.css">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            <a href="/" class="site-name">LIBRAIRIE EYROLLES - ASTRONOMIE</a>
+            <div id="basket" style="display: none;">
+                <a href="/basket" class="panier">Voir le panier</a>
+                <div>0 livres</div>
+            </div>
+        </header>
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+        <script src="/scripts/axios.min.js"></script>
+        <script src="/scripts/app.js"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
