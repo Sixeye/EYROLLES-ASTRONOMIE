@@ -6,8 +6,13 @@ Avant de commencer:
 
 Placez vous dans le dossier EYROLLES-ASTRONOMIE
 
-composer install
-symfony server:start
+créez un fichier .env
+dans le .env mettez ceci:
+
+DATABASE_URL=sqlite:///%kernel.project_dir%/data.db
+# Stripe
+STRIPE_PUBLIC_KEY=
+STRIPE_PRIVATE_KEY=
 
 aussi créez un fichier .env.local dans la racine du projet et insérez-y ceci:
 
@@ -15,14 +20,10 @@ aussi créez un fichier .env.local dans la racine du projet et insérez-y ceci:
 STRIPE_PUBLIC_KEY=votre_public_key_ici_colle_a_egal
 STRIPE_PRIVATE_KEY=votre_private_key_ici_colle_a_egal
 
-créez un fichier .env
-dans le .env mettez ceci:
+En ligne de commande dans le terminal tapez:
+composer install
+symfony server:start
 
-DATABASE_URL=sqlite:///%kernel.project_dir%/data.db
-
-# Stripe
-STRIPE_PUBLIC_KEY=
-STRIPE_PRIVATE_KEY=
 
 
 Pour le faux paiement, comme nous l'avons vu, il vous faudra vos clefs de test de Stripe à renseigner.
