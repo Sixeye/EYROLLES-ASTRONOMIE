@@ -12,13 +12,13 @@ créez un fichier .env
 dans le .env mettez ceci:
 
 DATABASE_URL=sqlite:///%kernel.project_dir%/data.db
-dièse Stripe \n
+dièse Stripe /n
 STRIPE_PUBLIC_KEY=
 STRIPE_PRIVATE_KEY=
 
 aussi créez un fichier .env.local dans la racine du projet et insérez-y ceci:
 
-dièse Stripe \n
+dièse Stripe /n
 STRIPE_PUBLIC_KEY=votre_public_key_ici_colle_a_egal
 STRIPE_PRIVATE_KEY=votre_private_key_ici_colle_a_egal
 
